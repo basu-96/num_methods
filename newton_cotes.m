@@ -8,8 +8,8 @@ function [result] = f(x)
 endfunction
 
 #limits of integration;
-a = 0;
-b = pi;
+a = 1;
+b = 4;
 n = input('Enter the degree of the interpolating polynomial :');
 h = (b - a) /n;
 
@@ -36,7 +36,6 @@ for i = 1:n_row
 	L = [L;l/D];
 end
 
-
 #weight function
 w = [];
 sum = 0;
@@ -48,7 +47,7 @@ end
 for i = 1:n_row
 	sum = sum + w(i) * f(lag_dat(i,1));
 endfor
-sum
+sum;
 
 
 
