@@ -3,9 +3,11 @@ clc;
 format long;
 printf('Trapezoidal rule for numerical integration\n');
 
+#function to be integrated
 function [result] = f(x)
 	result = exp(x)*cos(x);
 endfunction
+
 #limits of integration
 a = 0; #lower limit
 b = pi; #upper limit
